@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Что делать?</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div>
+		<h2 class="text-black ch1">0</h2>
+	</div>
+	<div class="col-12 border border-primary kkk" style="">
+		<h1><Бактерии на марсе. Что делать?</h1>
+		<div class="col-12 border border-dark otvet11">
+			<p>Бактериям нужна демократия!</p>
+		</div>
+		<div class="col-12 border border-dark otvet12">
+			<p>Поднять налоги!!</p>
+		</div>
+		<div class="col-12 border border-dark otvet13">
+			<p>Ура!! Новая жизнь</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary jjj" style="display: none">
+		<h1>Hайден новый материк в атлантическом море. твои действия?</h1>
+		<div class="col-12 border border-dark otvet21">
+			<p>о! гусеничка!</p>
+		</div>
+		<div class="col-12 border border-dark otvet22">
+			<p>там есть нефть?</p>
+		</div>
+		<div class="col-12 border border-dark otvet23">
+			<p>там есть люди!</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary iii" style="display: none">
+		<h1>Hачалась третья мировая. твои действия?</h1>
+		<div class="col-12 border border-dark otvet31">
+			<p>В бункер!</p>
+		</div>
+		<div class="col-12 border border-dark otvet32">
+			<p>А это кто?</p>
+		</div>
+		<div class="col-12 border border-dark otvet33">
+			<p>Смотри, грибочек!</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary ooo" style="display: none">
+		<h1>Твой друг заразился. твои действия?</h1>
+		<div class="col-12 border border-dark otvet41">
+			<p>Оставить пистолет c 2 патронами</p>
+		</div>
+		<div class="col-12 border border-dark otvet42">
+			<p>Пристрелить его</p>
+		</div>
+		<div class="col-12 border border-dark otvet43">
+			<p>Взять его с собой</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary ppp" style="display: none">
+		<h1>Ты увидел колбу с химикатом. твои действия?</h1>
+		<div class="col-12 border border-dark otvet51">
+			<p>Дать другу</p>
+		</div>
+		<div class="col-12 border border-dark otvet52">
+			<p>Облить зараженного</p>
+		</div>
+		<div class="col-12 border border-dark otvet53">
+			<p>Выпить</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary lll" style="display: none">
+		<h1>Ты понял что это из-за бактерий с марса</h1>
+		<div class="col-12 border border-dark otvet61">
+			<p>Печалька</p>
+		</div>
+		<div class="col-12 border border-dark otvet62">
+			<p>Пойти дальше</p>
+		</div>
+		<div class="col-12 border border-dark otvet63">
+			<p>Посидеть</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary uuu" style="display: none">
+		<h1>В тебя плюнули</h1>
+		<div class="col-12 border border-dark otvet71">
+			<p>Сдаться</p>
+		</div>
+		<div class="col-12 border border-dark otvet72">
+			<p>Запастись оружием и друзьями</p>
+		</div>
+		<div class="col-12 border border-dark otvet73">
+			<p>Застрелиться</p>
+		</div>
+	</div>
+
+	<div class="col-12 border border-primary yyy" style="display: none">
+		<h1>Поздравляю! Ты выжил и у тебя много нефти</h1>
+	</div>
+
+	<script type="text/javascript">
+
+		let glass = 0;
+
+		document.querySelector(".otvet11").onclick = function() { 
+    		alert("Ты получил нефть"); 
+    		document.querySelector(".kkk").style.display = "none"
+    		document.querySelector(".jjj").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet12").onclick = function() { 
+    		alert("Ты поднял налоги Бактериям, они не платят"); 
+		}
+		document.querySelector(".otvet13").onclick = function() { 
+    		alert("Ты Заразился"); 
+		}
+
+
+		document.querySelector(".otvet23").onclick = function() { 
+    		alert("Ура налоги!"); 
+    		document.querySelector(".jjj").style.display = "none"
+    		document.querySelector(".iii").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet22").onclick = function() { 
+    		alert("Нет):"); 
+		}
+		document.querySelector(".otvet21").onclick = function() { 
+    		alert("Тебе ничего не дали): зато есть гусеничка(:"); 
+		}
+
+
+		document.querySelector(".otvet32").onclick = function() { 
+    		alert("Ты увидел человека без головы и убежал (ты выжил)"); 
+    		document.querySelector(".iii").style.display = "none"
+    		document.querySelector(".ooo").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet33").onclick = function() { 
+    		alert("Ты стоял на месте пока тебя не снесло взрывной волной (Труп)"); 
+		}
+		document.querySelector(".otvet31").onclick = function() { 
+    		alert("Ты сидел там пока не кончились припасы и вход завалило (Труп)"); 
+		}
+
+
+		document.querySelector(".otvet43").onclick = function() { 
+    		alert("Ты зарубил его в машине когда он превратился"); 
+    		document.querySelector(".ooo").style.display = "none"
+    		document.querySelector(".ppp").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet41").onclick = function() { 
+    		alert("Тебе не хватило 1 патрона чтобы выжить (Надо было нож оставить)"); 
+		}
+		document.querySelector(".otvet42").onclick = function() { 
+    		alert("Тебя услышали и застрелили"); 
+		}
+
+
+		document.querySelector(".otvet52").onclick = function() { 
+    		alert("Ты облил его и он превратился в соплю (ты выжил)"); 
+    		document.querySelector(".ppp").style.display = "none"
+    		document.querySelector(".lll").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet53").onclick = function() { 
+    		alert("Ты растворился и умер (дибил)"); 
+		}
+		document.querySelector(".otvet51").onclick = function() { 
+    		alert("Он выпил и умер, он тебя не подсадил через забор и тебя загрызли"); 
+		}
+
+
+		document.querySelector(".otvet61").onclick = function() { 
+    		alert("Ну бывает): Зато есть нефть(:"); 
+    		document.querySelector(".lll").style.display = "none"
+    		document.querySelector(".uuu").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet62").onclick = function() { 
+    		alert("Ты думал на ходу и упал в яму (Труп)"); 
+		}
+		document.querySelector(".otvet63").onclick = function() { 
+    		alert("Ты сел и не смог поднять пятую точку (Тебя кокнул снайпер)"); 
+		}
+
+
+		document.querySelector(".otvet72").onclick = function() { 
+    		alert("(Ты перестрелял друзей и покушал"); 
+    		document.querySelector(".uuu").style.display = "none"
+    		document.querySelector(".yyy").style.display = "block"
+    		glass = glass + 1
+			document.querySelector(".ch1").innerHTML = glass;
+		}
+		document.querySelector(".otvet71").onclick = function() { 
+    		alert("Ты стал зараженным и тебя расстреляли"); 
+		}
+		document.querySelector(".otvet73").onclick = function() { 
+    		alert("Зараженная жижа может жить и без головы (Тебя сожгли)"); 
+    	}
+	</script>
+</body>
+</html>
